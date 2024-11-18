@@ -12,7 +12,7 @@
 #include "EEPROM.h"                                           // This is included with base install
 #include "IRremote.h"                                         // 
 #endif
-#include "commands.h"                                         // The commands.
+#include "commands.h"                                         // The commands. 
 
 #if FASTLED_VERSION < 3001000
 #error "Requires FastLED 3.1 or later; check github for latest code."
@@ -64,7 +64,7 @@ CRGBPalette16 gTargetPalette;                                // Also support smo
 CRGB solid = CRGB::Black;                                    // Цвет закраски
 
 
-extern const TProgmemRGBGradientPalettePtr gGradientPalettes[]; // These are for the fixed palettes in gradient_palettes.h
+extern const TProgmemRGBGradientPaletteRef gGradientPalettes[]; // These are for the fixed palettes in gradient_palettes.h
 extern const uint8_t gGradientPaletteCount;                     // Total number of fixed palettes to display.
 uint8_t gCurrentPaletteNumber = 0;                              // Current palette number from the 'playlist' of color palettes
 uint8_t currentPatternIndex = 0;                                // Index number of which pattern is current

@@ -43,7 +43,9 @@ void addbackground()
     if (  (leds[i].r < 5) &&
           (leds[i].g < 5) &&
           (leds[i].b < 5) )
-      leds[i].b += CRGB(5, 5, 5);
+      //leds[i].b += CRGB(5, 5, 5);
+      leds[i] += CRGB(5, 5, 5);
+      leds[i].b += 5;
 
 }
 
